@@ -37,6 +37,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
+      - name: Test with Maven
+        run: mvn -B test --file pom.xml
       - name: This is test step
         run: echo Hello from test job
       
