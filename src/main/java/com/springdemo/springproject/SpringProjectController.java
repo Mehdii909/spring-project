@@ -8,7 +8,7 @@ public class SpringProjectController {
 
     @RequestMapping
     public String helloWorld(){
-        return "Hello World from Spring Boo";
+        return "Hello World from Spring Boot";
     }
 
     @RequestMapping("/goodbye")
