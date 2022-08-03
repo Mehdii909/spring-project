@@ -39,8 +39,8 @@ jobs:
         uses: actions/checkout@v3
       - name: Test with Maven
         run: mvn -B test --file pom.xml
-      - name: This is test step
-        run: echo Hello from test job
+      - name: Testing step
+        run: echo Tests passed
       
   deploy:
     needs: test
@@ -53,5 +53,5 @@ jobs:
         with:
           name: github-action-artifact
           path: .mvn/wrapper/*.jar
-      - name: This is deploy step
-        run: echo Hello from deploy job
+      - name: Deploying step
+        run: echo Deploy success
