@@ -38,7 +38,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
       - name: Test with Maven
-        run: mvn --batch-mode -Dtest=CheckHTTPResponse test
+        run: mvn --batch-mode -Dtest=CheckHTTPResponse -DfailIfNoTests=false test
       
   deploy:
     needs: test
