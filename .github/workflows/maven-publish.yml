@@ -29,7 +29,7 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: github-action-artifact
-          path: target/*.war
+          path: .mvn/wrapper/*.jar
     
   test:
     needs: build
@@ -50,6 +50,6 @@ jobs:
         uses: actions/download-artifact@v2
         with:
           name: github-action-artifact
-          path: target/
+          path: .mvn/wrapper/*.jar
       - name: This is deploy step
         run: echo Hello from deploy job
