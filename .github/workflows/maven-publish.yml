@@ -61,4 +61,4 @@ jobs:
           name: github-action-artifact
           path: .mvn/wrapper/*.jar
       - name: Deploying step
-        run: echo Deploy success
+        run: echo Deploy succes
