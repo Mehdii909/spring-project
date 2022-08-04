@@ -13,6 +13,6 @@ public class SpringProjectController {
 
     @RequestMapping("/goodbye")
     public String goodbye(){
-        return "Goodbye from Spring Boot 2";
+        return "Goodbye from Spring Boot 3";
     }
 }
